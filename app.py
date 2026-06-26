@@ -9,8 +9,8 @@ CORS(app)
 
 # Load models
 print('Loading models...')
-facial_model = tf.keras.models.load_model('facial_best.h5')
-ct_model     = tf.keras.models.load_model('ct_best.h5')
+facial_model = tf.keras.models.load_model('facial_model.keras')
+ct_model = tf.keras.models.load_model('ct_model.keras')
 print('Models loaded!')
 
 def decode_img(b64):
